@@ -10,7 +10,7 @@ export function SchemaProvider({ children }) {
 
   useEffect(() => {
     axios
-      .get(`${import.meta.env.VITE_API_BASE_URL}/api/schema`)
+      .get(`${import.meta.env.VITE_API_BASE_URL}/api/formSchema`)
       .then((res) => {
         if (res.data.success) {
           setSchema(res.data.schema);
